@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+      }
+      
+      #myVideo {
+        position: absolute;
+        max-width: 100%;
+        max-height: auto;
+        width: auto;
+        height: auto;
+        display:grid;
+      }
+
+      #myVideo:hover + .content{
+        display: block;
+        position:absolute;
+        bottom: 0;
+        /* From https://css.glass */
+        background: rgba(60, 50, 50, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-top-right-radius: 5px;
+        color: #f1f1f1;
+        width: 50%;
+        padding: 20px;
+      }
+      
+      .content {
+        display: none;
+      }
+
+      </style>
+
+      <style>
+        header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  min-height: auto;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+  #myVideo1:hover + .content{
+        display: block;
+        position:absolute;
+        bottom: 0;
+        /* From https://css.glass */
+        background: rgba(60, 50, 50, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-top-right-radius: 5px;
+        color: #f1f1f1;
+        width: 50%;
+        padding: 20px;
+      }
+
+      .content {
+        display: none;
+      }
+
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('vid/Mobkey_The_BUGS_Designathon.mp4') black no-repeat center center scroll;
+    position: relative;
+  /* background-color: black; */
+  height: 20%;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  }
+}
+      </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="mobkey">
+
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo1">
+        <source src="vid/Mobkey_The_BUGS_Designathon.mp4" type="video/mp4">
+      </video>
+    
+      <!-- The header content -->
+      <div class="content">
+        <h1>Mobkey</h1>
+        <p>Product advertisement of a Smartphone - Mobkey..</p>
+      </div>
+    </header>
+    
+    <!-- Page section example for content below the video header -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+            <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+            <p class="mb-0">
+              Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <header id="hamlai_pani">
+
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo1">
+        <source src="vid/Hamlai pani.mp4" type="video/mp4">
+      </video>
+    
+      <!-- The header content -->
+      <div class="content">
+        <h1>Mobkey</h1>
+        <p>Product advertisement of a Smartphone - Mobkey..</p>
+      </div>
+    </header>
+    
+    <!-- Page section example for content below the video header -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+            <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+            <p class="mb-0">
+              Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <header id="shanta_ghar">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo1">
+        <source src="vid/Shanta Ghar - Anjan Sunar HD.mp4" type="video/mp4">
+      </video>
+    
+      <!-- The header content -->
+      <div class="content">
+        <h1>Mobkey</h1>
+        <p>Product advertisement of a Smartphone - Mobkey..</p>
+      </div>
+    </header>
+    
+    <!-- Page section example for content below the video header -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+            <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+            <p class="mb-0">
+              Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <header id="hackathon">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo1">
+        <source src="vid/HACKATHON FINAL.mp4" type="video/mp4">
+      </video>
+    
+      <!-- The header content -->
+      <div class="content">
+        <h1>Mobkey</h1>
+        <p>Product advertisement of a Smartphone - Mobkey..</p>
+      </div>
+    </header>
+    
+    <!-- Page section example for content below the video header -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+            <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+            <p class="mb-0">
+              Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <header id="fly_me">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo1">
+        <source src="vid/My Video5.mp4" type="video/mp4">
+      </video>
+    
+      <!-- The header content -->
+      <div class="content">
+        <h1>Mobkey</h1>
+        <p>Product advertisement of a Smartphone - Mobkey..</p>
+      </div>
+    </header>
+    
+    <!-- Page section example for content below the video header -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+            <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+            <p class="mb-0">
+              Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <header id="fluids">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo1" style="height: 100;">
+        <source src="vid//Fluids Final.mp4" type="video/mp4">
+      </video>
+    
+      <!-- The header content -->
+      <div class="content">
+        <h1>Mobkey</h1>
+        <p>Product advertisement of a Smartphone - Mobkey..</p>
+      </div>
+    </header>
+    
+    <!-- Page section example for content below the video header -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+            <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+            <p class="mb-0">
+              Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
